@@ -1,10 +1,10 @@
 import random
 import json
-
 import torch
 
 from model import NeuralNetwork
 from nltk_utils import bag_of_words, tokenize
+from textblob import TextBlob
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -25,8 +25,13 @@ model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
+
+accept_probability = 0.75
+
+
 def predict_chat(sentence: str):
-    sentence = tokenize(sentence)
+    sentence = tokenize(str(TextBlob(sentence).correct())) # spelling correction before tokenize
+
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -40,7 +45,7 @@ def predict_chat(sentence: str):
 
     prob = probs[0][predicted.item()]
     
-    if prob.item() > 0.5:
+    if prob.item() > accept_probability:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])

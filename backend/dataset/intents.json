@@ -93,24 +93,14 @@
                 "fuck you",
                 "stupid",
                 "sohai",
-                "cibai"
+                "cibai",
+                "you are useless",
+                "useless",
+                "you are bad"
             ],
             "responses": [
                 "Well that hurts :(",
                 "Don't need to tell me that."
-            ]
-        },
-        {
-            "tag": "exclaim",
-            "patterns": [
-                "Awesome",
-                "Great",
-                "I know",
-                "ok",
-                "yeah"
-            ],
-            "responses": [
-                "Yeah!"
             ]
         },
         {
@@ -156,19 +146,6 @@
             ],
             "responses": [
                 "Good to know!"
-            ]
-        },
-        {
-            "tag": "suggest",
-            "patterns": [
-                "you are useless",
-                "useless",
-                "suggest",
-                "suggestions",
-                "you are bad"
-            ],
-            "responses": [
-                "Please mail your suggestions to suggestion@ibanana.com. Thank you for helping me improve!"
             ]
         },
         {
