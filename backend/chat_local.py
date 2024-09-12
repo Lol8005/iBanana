@@ -8,4 +8,4 @@ while True:
     if sentence == "quit":
         break
 
-    print(predict_chat(sentence))
+    print("Bot: " + predict_chat(sentence))

@@ -11,11 +11,6 @@ env\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
-# Using Nvidia GPU for training (Optional)
-```cmd
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
-
 # Create requirements.txt (For contributor only)
 ```cmd
 pip freeze > requirements.txt
@@ -34,6 +29,16 @@ Run command below in CMD
 ```cmd
 deactivate
 ```
+
+# How to enable API requests
+Run chat_api.py
+
+# How to run iBanana website
+Run chat_api.py
+Run ...
+
+# How to chat with bot locally (CLI interface)
+Run chat_local.py
 
 
 # Resource
