@@ -1,0 +1,5 @@
+env
+study
+flow
+backend/__pycache__
+backend/dataset/trained_data.pth
