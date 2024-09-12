@@ -30,6 +30,9 @@ Run command below in CMD
 deactivate
 ```
 
+# Must train model first before running chatbot
+Run train.py
+
 # How to enable API requests
 Run chat_api.py
 
