@@ -172,15 +172,12 @@
             ]
         },
         {
-            "tag": "purchases",
+            "tag": "suggest_gpu",
             "patterns": [
-                "I'd like to cancel my order",
-                "I want to cancel my order",
-                "cancel my order"
+                "Suggest GPU under $",
+                "Suggest best GPU for"
             ],
-            "responses": [
-                "!Suggestion!"
-            ]
+            "responses": []
         },
         {
             "tag": "question_build_pc",
