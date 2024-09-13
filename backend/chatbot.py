@@ -25,12 +25,12 @@ model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-
+# NN = 0.75, NN2 = 0.5
 accept_probability = 0.75
 
 
 def predict_chat(sentence: str):
-    sentence = tokenize(str(TextBlob(sentence).correct())) # spelling correction before tokenize
+    sentence = tokenize(str(TextBlob(sentence.lower()).correct())) # spelling correction before tokenize
 
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -48,6 +48,8 @@ def predict_chat(sentence: str):
     if prob.item() > accept_probability:
         for intent in intents['intents']:
             if tag == intent["tag"]:
+                # print(prob.item())
+
                 return random.choice(intent['responses'])
     else:
         return random.choice(intents["intents"][0]['responses'])

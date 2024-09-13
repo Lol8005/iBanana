@@ -1,5 +1,4 @@
 import numpy as np
-import random
 import json
 
 import torch
@@ -22,7 +21,7 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         # tokenize each word in the sentence
-        w = tokenize(pattern)
+        w = tokenize(pattern.lower())
         # add to our words list
         all_words.extend(w)
         # add to xy pair
@@ -58,7 +57,7 @@ num_epochs = 1000
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 80
+hidden_size = 8
 output_size = len(tags)
 print(input_size, output_size)
 
@@ -93,6 +92,8 @@ model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
+outputs = None
+
 # Train the model
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
@@ -101,6 +102,9 @@ for epoch in range(num_epochs):
         
         # Forward pass
         outputs = model(words)
+
+        # visualize NN model
+        
 
         # if y would be one-hot, we must apply
         # labels = torch.max(labels, 1)[1]

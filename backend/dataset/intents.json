@@ -154,7 +154,7 @@
                 "Suggest GPU under $",
                 "Suggest best GPU for"
             ],
-            "responses": []
+            "responses": [""]
         },
         {
             "tag": "question_build_pc",
