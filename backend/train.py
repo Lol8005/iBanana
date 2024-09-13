@@ -8,6 +8,10 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNetwork
 
+import time
+
+start_time = time.perf_counter()
+
 with open('backend/dataset/intents.json', 'r') as f:
     intents = json.load(f)
 
@@ -133,4 +137,4 @@ data = {
 FILE = "backend/dataset/trained_data.pth"
 torch.save(data, FILE)
 
-print(f'training complete. file saved to {FILE}')
+print(f'training complete. Time taken: {time.perf_counter() - start_time}. file saved to {FILE}')
