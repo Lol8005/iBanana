@@ -2,7 +2,7 @@ Name,Price,Producer,Supported Sockets,Height,80mm Fans,92mm Fans,120mm Fans,140m
 Noctua NH-D9DX i4 3U - 92mm,$58.02,Noctua,"1366, 2011, 2011-V3, 2066, 1700",110 mm,0,0,0,0,0,TRUE
 Antec A30 - 92mm,$29.07,Antec,"1150, 1151, 1155, 1156, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",122.5 mm,0,0,0,0,0,TRUE
 be quiet! Pure Rock Slim - 92mm,$35.53,be quiet!,"1150, 1151, 1155, 1156, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",125 mm,0,0,0,0,0,TRUE
-Arctic Freezer 7 Pro PWM Rev.2 - 92mm,$27.44,Arctic,"1150, 1151, 1155, 1156, 1366, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+","126,5 mm",0,0,0,0,0,FALSE
+Arctic Freezer 7 Pro PWM Rev.2 - 92mm,$27.44,Arctic,"1150, 1151, 1155, 1156, 1366, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",126.5 mm,0,0,0,0,0,FALSE
 Arctic Freezer 12 - 92mm,$26.07,Arctic,"1150, 1151, 1155, 1156, 2011, 2011-V3, 2066, AM4",130 mm,0,0,0,0,0,FALSE
 Arctic Freezer 12 CO - 92mm,$29.37,Arctic,"1150, 1151, 1155, 1156, 2011, 2011-V3, 2066, AM4",130 mm,0,0,0,0,0,FALSE
 Arctic Freezer 13 - 92mm,$31.41,Arctic,"1150, 1151, 1155, 1156, 1366, 754, 775, 939, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",130 mm,0,0,0,0,0,FALSE
@@ -11,7 +11,7 @@ DEEPCOOL GAMMAXX 200T 2 Heat pipes 120mm PWM Fan,$20.12,DEEPCOOL,"1150 , 1151 , 
 be quiet! Dark Rock TF 2 - 135/135mm,$111.15,be quiet!,"1200, 1150, 1151, 1155, 1156, 2011-V3, 2066, AM4, AM3+, AM5, 1700",134 mm,0,0,0,0,0,FALSE
 be quiet! Pure Rock Slim 2 - 92mm,$31.9,be quiet!,"1200, 1150, 1151, 1155, AM4, AM3+, AM5, 1700",135 mm,0,0,0,0,0,TRUE
 Antec A40 PRO - 92mm,$39.42,Antec,"1150, 1151, 1155, 1156, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",136 mm,0,0,0,0,0,TRUE
-Antec C40 - 92mm,$56.96,Antec,"1150, 1151, 1155, 1156, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+","136,5 mm",0,0,0,0,0,TRUE
+Antec C40 - 92mm,$56.96,Antec,"1150, 1151, 1155, 1156, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",136.5 mm,0,0,0,0,0,TRUE
 Cooler Master Hyper T2 - Compact with Dual Looped Direct Contact Heatpipes,$14.5,Cooler Master,"1150 , 1156 , 1155 , 775, FM2+ , FM2 , FM1 , AM4 , AM3+ , AM3 , AM2",140 mm,0,0,0,0,0,FALSE
 Noctua NH-C14S - 140mm,$80.15,Noctua,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, FM1, FM2, FM2+, 1700",142 mm,0,0,0,0,0,TRUE
 Deepcool GAMMAXX S40 120mm Hydro,$27.55,DEEPCOOL,"2011, 1366, 1156 , 1155 , 1151 , 1150 , 775, FM2, FM1 , AM4 , AM3+ , AM3 , AM2+ , AM2 , 940 , 939",143 mm,0,0,0,0,0,FALSE
@@ -34,7 +34,7 @@ Arctic Freezer 34 - 120mm,$30.72,Arctic,"1150, 1151, 1155, 1156, 2011, 2011-V3, 
 "Arctic Freezer 34 eSports Duo , 2x 120mm - red",$51.28,Arctic,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, 1700",157 mm,0,0,0,0,0,FALSE
 "Arctic Freezer 34 eSports , 120mm - white",$60.48,Arctic,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, 1700",157 mm,0,0,0,0,0,TRUE
 be quiet! Dark Rock 4 - 135mm,$64.54,be quiet!,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 754, 775, 939, 940, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, AM5, 1700",159 mm,0,0,0,0,0,TRUE
-be quiet! Dark Rock Slim - 120mm,$68.17,be quiet!,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, AM5, 1700","159,4 mm",0,0,0,0,0,TRUE
+be quiet! Dark Rock Slim - 120mm,$68.17,be quiet!,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, AM5, 1700",159.4 mm,0,0,0,0,0,TRUE
 Cooler Master Hyper 212 Black Edition - 120mm,$62.91,Cooler Master,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",160.02 mm,0,0,0,0,0,TRUE
 be quiet! Dark Rock Pro 4 - 135mm,$104.44,be quiet!,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, AM5, 1700",163 mm,0,0,0,0,0,TRUE
 be quiet! Shadow Rock 3 - 120mm,$57.29,be quiet!,"1150, 1151, 1155, 2011-V3, 2011, 2066, AM4, AM3+, AM3, AM5, 1700",163 mm,0,0,0,0,0,TRUE
@@ -42,7 +42,7 @@ be quiet! Shadow Rock 3 White - 120mm,$60.92,be quiet!,"1200, 1150, 1151, 1155, 
 Noctua NH-U14S 140mm SSO2-Bearing (Self-stabilising oil-presure bearing),$71.3,Noctua,"1150, 1151, 1155, 1156, 2011, 2011-V3, 2066, AM2, AM3, AM3+, FM1, FM2, FM2+, 1700",165 mm,0,0,0,0,0,FALSE
 Noctua NH-D15S 140mm,$72.5,Noctua,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, FM1, FM2, FM2+, 1700",165 mm,0,0,0,0,0,TRUE
 NH-D15,$97.92,Noctua,"AM4, 2011-V3, 1151, FM2, FM2+, AM3, AM3+, 1700, AM5",165 mm,0,0,0,2,0,TRUE
-Cooler Master MasterAir MA410M RGB - 2x120mm PWM,$57.06,Cooler Master,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+","165,1 mm",0,0,0,0,0,FALSE
+Cooler Master MasterAir MA410M RGB - 2x120mm PWM,$57.06,Cooler Master,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",165.1 mm,0,0,0,0,0,FALSE
 "Cooler Master MasterAir MA610P , RGB - 120mm",$56.77,Cooler Master,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",166.5 mm,0,0,0,0,0,FALSE
 Corsair Air A500 - 120mm,$78.85,Corsair,"1150, 1151, 1155, 1156, 2011, 2011-V3, 2066, AM2, AM3, AM3+, AM4",169 mm,0,0,0,0,0,FALSE
 Arctic Alpine 64 GT - 80mm,$10.15,Arctic,"754, 939, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",65 mm,0,0,0,0,0,FALSE
@@ -50,7 +50,7 @@ Arctic Alpine 64 GT - 80mm,$10.15,Arctic,"754, 939, AM2, AM3, AM3+, AM4, FM1, FM
 Arctic Alpine AM4 - 92mm,$11.99,Arctic,AM4,69 mm,0,0,0,0,0,FALSE
 "Arctic Alpine AM4 passiver , black",$15.95,Arctic,AM4,70 mm,0,0,0,0,0,FALSE
 Arctic Alpine 64 plus - 92mm,$17.08,Arctic,"939, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",70 mm,0,0,0,0,0,FALSE
-"Cooler Master MasterAir G100M, RGB - 100mm",$30.46,Cooler Master,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+","74,5 mm",0,0,0,0,0,FALSE
+"Cooler Master MasterAir G100M, RGB - 100mm",$30.46,Cooler Master,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",74.5 mm,0,0,0,0,0,FALSE
 "PHANTEKS PH-TC12LS HTPC - 120mm, black",$39.89,PHANTEKS,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",75 mm,0,0,0,0,0,FALSE
 be quiet! Shadow Rock LP Low Profile - 120mm,$39.16,be quiet!,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 754, 775, 939, 940, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+, AM5, 1700","75,4 mm",0,0,0,0,0,FALSE
 PHANTEKS PH-TC12LS mit RGB Halos - 120mm,$52.42,PHANTEKS,"1150, 1151, 1155, 1156, 1366, 2011, 2011-V3, 2066, 775, AM2, AM3, AM3+, AM4, FM1, FM2, FM2+",80 mm,0,0,0,0,0,FALSE
