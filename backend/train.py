@@ -137,4 +137,4 @@ data = {
 FILE = "backend/dataset/trained_data.pth"
 torch.save(data, FILE)
 
-print(f'training complete. Time taken: {time.perf_counter() - start_time}. file saved to {FILE}')
+print(f'training complete. Time taken: {round(time.perf_counter() - start_time, 2)}. file saved to {FILE}')
