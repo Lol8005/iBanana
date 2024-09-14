@@ -1,13 +1,13 @@
 # Source: https://www.youtube.com/watch?v=zsYIw6RXjfM
 
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 from chatbot import predict_chat
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "iBananaAPI"
+    return render_template("base.html")
 
 @app.route("/conversation", methods=["POST"])
 def convesation():
