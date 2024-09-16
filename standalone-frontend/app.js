@@ -46,7 +46,7 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch("http://localhost:8888/conversation", {
+        fetch($SCRIPT_ROOT+":8888/conversation", {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
