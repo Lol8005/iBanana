@@ -2,7 +2,7 @@ import random
 import json
 import torch
 
-from model import NeuralNetwork
+from model import NeuralNetwork2
 from nltk_utils import bag_of_words, tokenize
 from textblob import TextBlob
 
@@ -21,7 +21,7 @@ all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
 
-model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
+model = NeuralNetwork2(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 

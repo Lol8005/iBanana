@@ -46,7 +46,7 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch($SCRIPT_ROOT+'/conversation', {
+        fetch("http://localhost:8888/conversation", {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
@@ -56,7 +56,7 @@ class Chatbox {
           })
           .then(r => r.json())
           .then(r => {
-            let msg2 = { name: "Sam", message: r.answer };
+            let msg2 = { name: "Sam", message: r.bot_response };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''

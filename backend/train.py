@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
 from nltk_utils import bag_of_words, tokenize, stem
-from model import NeuralNetwork
+from model import NeuralNetwork2
 
 import time
 
@@ -90,7 +90,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 print(f"Using {device}")
 
-model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
+model = NeuralNetwork2(input_size, hidden_size, output_size).to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()

@@ -1,22 +1,20 @@
 # Source: https://www.youtube.com/watch?v=zsYIw6RXjfM
 
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 from chatbot import predict_chat
 
 app = Flask(__name__)
-
-@app.route("/")
-def index():
-    return render_template("base.html")
+CORS(app)
 
 @app.route("/conversation", methods=["POST"])
 def convesation():
     # passed data
-    data = request.get_json()
+    data = request.get_json().get("message")
 
-    prediction = predict_chat(data["user_response"])
+    prediction = predict_chat(data)
 
-    print(data["user_response"] + " -> " + prediction)
+    print(data + " -> " + prediction)
 
     response = {
         "bot_response": prediction
@@ -26,4 +24,4 @@ def convesation():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8888)
+    app.run(debug=True,host='0.0.0.0', port=8888)
