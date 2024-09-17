@@ -45,7 +45,7 @@ class Chatbox {
 
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
-
+        if($AI==1){
         fetch($SCRIPT_ROOT+":8888/conversation", {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
@@ -56,7 +56,7 @@ class Chatbox {
           })
           .then(r => r.json())
           .then(r => {
-            let msg2 = { name: "Sam", message: r.bot_response };
+            let msg2 = { name: "Samantha", message: r.bot_response };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
@@ -66,12 +66,34 @@ class Chatbox {
             this.updateChatText(chatbox)
             textField.value = ''
           });
+        }else{
+            fetch($SCRIPT_ROOT+":8888/conversation2", {
+                method: 'POST',
+                body: JSON.stringify({ message: text1 }),
+                mode: 'cors',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+              })
+              .then(r => r.json())
+              .then(r => {
+                let msg2 = { name: "Samantha", message: r.bot_response };
+                this.messages.push(msg2);
+                this.updateChatText(chatbox)
+                textField.value = ''
+    
+            }).catch((error) => {
+                console.error('Error:', error);
+                this.updateChatText(chatbox)
+                textField.value = ''
+              });
+        }
     }
 
     updateChatText(chatbox) {
         var html = '';
         this.messages.slice().reverse().forEach(function(item, index) {
-            if (item.name === "Sam")
+            if (item.name === "Samantha")
             {
                 html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
             }
