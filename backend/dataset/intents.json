@@ -195,7 +195,7 @@
           "meaning of soft-state drive"
         ],
         "responses": [
-          "A solid-state drive is a type of solid-state storage device that uses integrated circuits to store data persistently. ",
+          "A solid-state drive is a type of solid-state storage device that uses integrated circuits to store data persistently.",
           "SSDs sometimes called semiconductor storage device, solid-state device, and solid-state disk."
         ]
       },
@@ -306,22 +306,6 @@
         ],
         "responses": [
           "Here is a Motherboard recommendation."
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "bye",
-          "see you later",
-          "goodbye",
-          "get lost",
-          "till next time",
-          "bbye"
-        ],
-        "responses": [
-          "See you!",
-          "Have a nice day.",
-          "Bye! Come back again soon."
         ]
       },
       {
