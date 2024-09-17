@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load intents.json
-with open('intents.json') as file:
+with open('backend/dataset/intents.json', encoding='utf-8') as file:
     intents_data = json.load(file)
 
 intents = intents_data['intents']
@@ -23,25 +23,25 @@ for intent in intents:
     responses_dict[intent['tag']] = intent['responses']
 
 # Load CPU data
-cpu_data = pd.read_csv('CPUData.csv')
+cpu_data = pd.read_csv('backend/dataset/CPUData.csv')
 # TODO: Load Cooler data
-cooler_data = pd.read_csv('CPUCoolerData.csv')
+cooler_data = pd.read_csv('backend/dataset/CPUCoolerData.csv')
 # TODO: Load Case data
-case_data = pd.read_csv('CaseData.csv')
+case_data = pd.read_csv('backend/dataset/CaseData.csv')
 # TODO: Load GPU data
-gpu_data = pd.read_csv('GPUData.csv')
+gpu_data = pd.read_csv('backend/dataset/GPUData.csv')
 # TODO: Load HDD data
-hdd_data = pd.read_csv('HDDData.csv')
+hdd_data = pd.read_csv('backend/dataset/HDDData.csv')
 # TODO: Load Monitor data
-monitor_data = pd.read_csv('MonitorData.csv')
+monitor_data = pd.read_csv('backend/dataset/MonitorData.csv')
 # TODO: Load Motherboard data
-motherboard_data = pd.read_csv('MotherboardData.csv')
+motherboard_data = pd.read_csv('backend/dataset/MotherboardData.csv')
 # TODO: Load PSU data
-psu_data = pd.read_csv('PSUData.csv')
+psu_data = pd.read_csv('backend/dataset/PSUData.csv')
 # TODO: Load RAM data
-ram_data = pd.read_csv('RAMData.csv')
+ram_data = pd.read_csv('backend/dataset/RAMData.csv')
 # TODO: Load SSD data
-ssd_data = pd.read_csv('SSDData.csv')
+ssd_data = pd.read_csv('backend/dataset/SSDData.csv')
 
 # Vectorize the patterns
 vectorizer = TfidfVectorizer()
@@ -325,6 +325,7 @@ def generate_response(user_input):
     # Return response
     return response
 
+print("KNN run successfully!")
 # Test the chatbot
 #test_inputs = [
 #    "recommend ssd",

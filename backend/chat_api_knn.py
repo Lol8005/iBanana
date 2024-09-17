@@ -1,20 +1,18 @@
-# Source: https://www.youtube.com/watch?v=zsYIw6RXjfM
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from chatbot import predict_chat
+from knn import generate_response
 
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/conversation", methods=["POST"])
+@app.route("/conversation2", methods=["POST"])
 def convesation():
     # passed data
     data = request.get_json().get("message")
 
-    prediction = predict_chat(data)
+    prediction = generate_response(data)
 
-    print(data + " --> " + prediction)
+    print(data + " -> " + prediction)
 
     response = {
         "bot_response": prediction
