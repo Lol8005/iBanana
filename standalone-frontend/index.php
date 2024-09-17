@@ -101,7 +101,7 @@ include 'product_cardgroup/productClass.php';
                 <div class="chatbox__support">
                     <div class="chatbox__header">
                         <div class="chatbox__image--header">
-                            <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                            <img src="images/chatbot-icon.png" alt="image" width=50 height=50>
                         </div>
                         <div class="chatbox__content--header">
                             <h4 class="chatbox__heading--header">Chat support</h4>
@@ -124,7 +124,7 @@ include 'product_cardgroup/productClass.php';
         <script>
             $SCRIPT_ROOT = window.location.protocol + '//' + window.location.hostname;
             //Change AI here, 1=Multilayer NN 2=KNN
-            $AI=1;
+            $AI=2;
         </script>
         <script src="./app.js"></script>
     </main>
