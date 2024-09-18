@@ -6,11 +6,13 @@ with open('backend/dataset/intents_cleaned.json', 'r',  encoding='utf-8') as f:
     intents = json.load(f)
 
 correct = total = 0
-
+print("\n")
+print(f"{'Predicted Intent (x)':<30} | {'User Input':<50}| {'Expected Intent (y)':<30}")
 start_pred = time.time()
 for intent in intents['intents']:
     for pattern in intent['patterns']:
         result = classify_intent(pattern) 
+        print(f"{result:<30} | {pattern:<50}| {intent["tag"]:<30}")
         if result in intent["tag"]:
             correct += 1
         total += 1
@@ -264,16 +266,21 @@ correct_intent=[
   "options",
   "options",
   "options",
-  "Non existing intent",
-  "Non existing intent"
+  "nothing",
+  "nothing"
 ]
 
 correct_count = 0
 total = len(correct_intent)
+print("\n")
+print(f"{'Predicted Intent (x)':<30} | {'User Input':<50}| {'Expected Intent (y)':<30}")
+print("-" * 110)
 start_pred = time.time()
 for i in range(total):
     # Check if prediction matches the actual intent and if it's a valid intent
-    if classify_intent(test_data[i]) == correct_intent[i]:
+    predicted=classify_intent(test_data[i].lower().strip())
+    print(f"{predicted:<30} | {test_data[i]:<50}| {correct_intent[i]:<30}")
+    if predicted == correct_intent[i]:
         correct_count += 1
 end_pred = time.time()
 accuracy = correct_count / total * 100
