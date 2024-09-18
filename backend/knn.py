@@ -329,20 +329,20 @@ def generate_response(user_input):
 
 print("KNN run successfully!")
 # Test the chatbot
-test_inputs = [
+#test_inputs = [
 #    "recommend ssd",
 #    "best hdd?",
 #    "what is the best cooler for gaming? recommend one",
-    "give me the definition of ram",
+#    "recommend hdd"
 #    "what is the best cpu for gaming? recommend one",
 #    "recommend motherboard",
 #    "recommend monitor",
 #    "recommend psu",
 #    "recommend case",
 #    "recommend gpu"
-]
+#]
 
-for user_input in test_inputs:
-    response = generate_response(user_input)
-    print(f"You: {user_input}")
-    print(f"Chatbot: {response}\n")
+# for user_input in test_inputs:
+#     response = generate_response(user_input)
+#     print(f"You: {user_input}")
+#     print(f"Chatbot: {response}\n")
