@@ -25,24 +25,36 @@ for intent in intents:
 
 # Load CPU data
 cpu_data = pd.read_csv('backend/dataset/CPUData.csv')
-# TODO: Load Cooler data
+# Load Cooler data
 cooler_data = pd.read_csv('backend/dataset/CPUCoolerData.csv')
-# TODO: Load Case data
+# Load Case data
 case_data = pd.read_csv('backend/dataset/CaseData.csv')
-# TODO: Load GPU data
+# Load GPU data
 gpu_data = pd.read_csv('backend/dataset/GPUData.csv')
-# TODO: Load HDD data
+# Load HDD data
 hdd_data = pd.read_csv('backend/dataset/HDDData.csv')
-# TODO: Load Monitor data
+# Load Monitor data
 monitor_data = pd.read_csv('backend/dataset/MonitorData.csv')
-# TODO: Load Motherboard data
+# Load Motherboard data
 motherboard_data = pd.read_csv('backend/dataset/MotherboardData.csv')
-# TODO: Load PSU data
+# Load PSU data
 psu_data = pd.read_csv('backend/dataset/PSUData.csv')
-# TODO: Load RAM data
+# Load RAM data
 ram_data = pd.read_csv('backend/dataset/RAMData.csv')
-# TODO: Load SSD data
+# Load SSD data
 ssd_data = pd.read_csv('backend/dataset/SSDData.csv')
+
+#Remove duplicate
+cpu_data.drop_duplicates(inplace=True)
+gpu_data.drop_duplicates(inplace=True)
+psu_data.drop_duplicates(inplace=True)
+ram_data.drop_duplicates(inplace=True)
+hdd_data.drop_duplicates(inplace=True)
+monitor_data.drop_duplicates(inplace=True)
+motherboard_data.drop_duplicates(inplace=True)
+cooler_data.drop_duplicates(inplace=True)
+case_data.drop_duplicates(inplace=True)
+
 
 # Vectorize the patterns
 vectorizer = TfidfVectorizer()
