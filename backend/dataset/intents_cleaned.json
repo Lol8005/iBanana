@@ -82,15 +82,15 @@
             "tag": "cpu_recommendation",
             "patterns": [
                 "recommend good cpu",
-                "best cpu gaming",
-                "cpu video editing",
+                "recommend best cpu gaming",
+                "recommend cpu video editing",
                 "recommend central processing unit",
-                "best central processing unit gaming",
-                "central processing unit video editing",
+                "recommend best central processing unit gaming",
+                "recommend central processing unit video editing",
                 "recommend processor",
-                "best processor gaming",
-                "processor video editing",
-                "top cpu gaming",
+                "recommend best processor gaming",
+                "recommend processor video editing",
+                "recommend top cpu gaming",
                 "cpu suggestions normal usage"
             ],
             "responses": [
@@ -114,9 +114,9 @@
             "tag": "cpu_cooler_recommendation",
             "patterns": [
                 "recommend cpu cooler",
-                "best cpu cooler gaming",
-                "cpu cooler video editing",
-                "top cpu coolers",
+                "recommend best cpu cooler gaming",
+                "recommend cpu cooler video editing",
+                "recommend top cpu coolers",
                 "provide cpu cooler suggestions"
             ],
             "responses": [
@@ -143,12 +143,12 @@
             "tag": "gpu_recommendation",
             "patterns": [
                 "recommend gpu",
-                "best gpu gaming",
-                "gpu video editing",
+                "recommend best gpu gaming",
+                "recommend gpu video editing",
                 "recommend graphics processing units",
-                "best graphics processing units gaming",
-                "graphics processing units video editing",
-                "top gpu gaming",
+                "recommend best graphics processing units gaming",
+                "recommend graphics processing units video editing",
+                "recommend top gpu gaming",
                 "gpu suggestions normal uses cases"
             ],
             "responses": [
@@ -173,8 +173,8 @@
             "patterns": [
                 "recommend atx mini atx case",
                 "suggest atx case",
-                "best computer case atx size",
-                "top cases pcs"
+                "recommend best computer case atx size",
+                "recommend top cases pcs"
             ],
             "responses": [
                 "Here is a Case recommendation."
@@ -204,8 +204,8 @@
                 "suggest good hdd",
                 "recommend large hard disk drive",
                 "suggest hard disk drive",
-                "best hdd storage",
-                "top hard drives"
+                "recommend best hdd storage",
+                "recommend top hard drives"
             ],
             "responses": [
                 "Here is a Hard Disk Drive (HDD) recommendation."
@@ -235,8 +235,8 @@
                 "suggest nvme ssd",
                 "recommend nvme solidstate drive",
                 "suggest good nvme solidstate drive",
-                "best nvme ssd performance",
-                "top solidstate drives"
+                "recommend best nvme ssd performance",
+                "recommend top solidstate drives"
             ],
             "responses": [
                 "Here is a Soft-State Drive (SSD) recommendation."
@@ -265,8 +265,8 @@
                 "suggest psu",
                 "recommend power supply unit",
                 "suggest power supply unit",
-                "best psu gaming",
-                "top power supply units"
+                "recommend best psu gaming",
+                "recommend top power supply units"
             ],
             "responses": [
                 "Here is a Power Supply Unit (PSU) recommendation."
@@ -295,8 +295,8 @@
                 "suggest large ram",
                 "recommend good random access memory",
                 "suggest best random access memory",
-                "best ram gaming",
-                "top ram options"
+                "recommend best ram gaming",
+                "recommend top ram options"
             ],
             "responses": [
                 "Here is a Random Access Memory (RAM) recommendation."
@@ -321,8 +321,8 @@
             "patterns": [
                 "recommend big monitor",
                 "suggest good monitor",
-                "best monitor gaming",
-                "top monitor options",
+                "recommend best monitor gaming",
+                "recommend top monitor options",
                 "monitor suggestions"
             ],
             "responses": [
@@ -349,7 +349,7 @@
             "patterns": [
                 "recommend motherboard",
                 "suggest motherboard",
-                "best motherboard gaming",
+                "recommend best motherboard gaming",
                 "top motherboard options"
             ],
             "responses": [
