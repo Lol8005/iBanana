@@ -50,6 +50,6 @@ def predict_chat(sentence: str):
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
     else:
-        return random.choice(intents["intents"][0]['responses'])
+        return "Sorry, I can't understand you";
 
     

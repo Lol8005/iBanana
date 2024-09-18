@@ -70,9 +70,9 @@
 				"meaning of central processing unit",
 				"what is processor",
 				"definition of processor",
-				"meaning of processor",
-				"cpu explanation",
-				"cpu purpose"
+				"what is the meaning of processor",
+				"tell me the cpu explanation",
+				"what is the purpose of cpu"
 			],
 			"responses": [
 				"The CPU, also referred to as the “central” or “main” processor, is a complex set of electronic circuitry that runs the machine's operating system and apps. The CPU interprets, processes and executes instructions, most often from the hardware and software programs running on the device."
@@ -81,7 +81,7 @@
 		{
 			"tag": "cpu_recommendation",
 			"patterns": [
-				"recommend a cpu",
+				"recommend a good cpu",
 				"best cpu for gaming",
 				"cpu for video editing",
 				"recommend a central processing unit",
@@ -91,7 +91,7 @@
 				"best processor for gaming",
 				"processor for video editing",
 				"top cpu for gaming",
-				"cpu suggestions"
+				"cpu suggestions for normal usage"
 			],
 			"responses": [
 				"Here is a Central Processing Unit (CPU) recommendation."
@@ -102,8 +102,8 @@
 			"patterns": [
 				"what is cpu cooler",
 				"definition of cpu cooler",
-				"meaning of cpu cooler",
-				"cpu cooler function",
+				"the meaning of cpu cooler",
+				"what is the function of cpu cooler",
 				"why do I need a cpu cooler"
 			],
 			"responses": [
@@ -117,7 +117,7 @@
 				"best cpu cooler for gaming",
 				"cpu cooler for video editing",
 				"top cpu coolers",
-				"cpu cooler suggestions"
+				"provide me some cpu cooler suggestions"
 			],
 			"responses": ["Here is a CPU Cooler recommendation."]
 		},
@@ -125,12 +125,12 @@
 			"tag": "definition_gpu",
 			"patterns": [
 				"what is gpu",
-				"definition of gpu",
-				"meaning of gpu",
+				"what is the definition of gpu",
+				"what is the meaning of gpu",
 				"what is graphics processing units",
-				"definition of graphics processing units",
+				"the definition of graphics processing units",
 				"meaning of graphics processing units",
-				"gpu purpose",
+				"what is the purpose of gpu",
 				"gpu functionality"
 			],
 			"responses": [
@@ -147,7 +147,7 @@
 				"best graphics processing units for gaming",
 				"graphics processing units for video editing",
 				"top gpu for gaming",
-				"gpu suggestions"
+				"gpu suggestions for normal uses cases"
 			],
 			"responses": [
 				"Here is a Graphic Processing Units (GPU) recommendation."
@@ -156,9 +156,9 @@
 		{
 			"tag": "definition_case",
 			"patterns": [
-				"what is case",
-				"definition of case",
-				"meaning of case",
+				"what is pc case",
+				"the definition of pc case",
+				"the meaning of pc case",
 				"what is a computer case",
 				"computer case purpose"
 			],
@@ -169,9 +169,9 @@
 		{
 			"tag": "case_recommendation",
 			"patterns": [
-				"recommend a case",
-				"suggest a case",
-				"best computer case",
+				"recommend a ATX or mini ATX case",
+				"suggest a ATX case",
+				"best computer case for ATX size",
 				"top cases for PCs"
 			],
 			"responses": ["Here is a Case recommendation."]
@@ -180,8 +180,8 @@
 			"tag": "definition_hdd",
 			"patterns": [
 				"what is hdd",
-				"definition of hdd",
-				"meaning of hdd",
+				"what is the definition of hdd",
+				"the meaning of hdd",
 				"what is hard disk drive",
 				"definition of hard disk drive",
 				"meaning of hard disk drive",
@@ -196,9 +196,9 @@
 		{
 			"tag": "hdd_recommendation",
 			"patterns": [
-				"recommend a hdd",
-				"suggest a hdd",
-				"recommend a hard disk drive",
+				"recommend a big capacity hdd",
+				"suggest a good hdd",
+				"recommend a large hard disk drive",
 				"suggest a hard disk drive",
 				"best hdd for storage",
 				"top hard drives"
@@ -209,13 +209,13 @@
 			"tag": "definition_ssd",
 			"patterns": [
 				"what is ssd",
-				"definition of ssd",
-				"meaning of ssd",
+				"the definition of ssd",
+				"what is the meaning of ssd",
 				"what is solid-state drive",
 				"definition of solid-state drive",
 				"meaning of solid-state drive",
-				"ssd function",
-				"ssd purpose"
+				"what is the function of ssd",
+				"fast ssd purpose"
 			],
 			"responses": [
 				"A solid-state drive is a type of solid-state storage device that uses integrated circuits to store data persistently.",
@@ -225,11 +225,11 @@
 		{
 			"tag": "ssd_recommendation",
 			"patterns": [
-				"recommend a ssd",
-				"suggest a ssd",
-				"recommend a solid-state drive",
-				"suggest a solid-state drive",
-				"best ssd for performance",
+				"recommend a fast ssd",
+				"suggest a nvme ssd",
+				"recommend a nvme solid-state drive",
+				"suggest a good nvme solid-state drive",
+				"best nvme ssd for performance",
 				"top solid-state drives"
 			],
 			"responses": ["Here is a Soft-State Drive (SSD) recommendation."]
@@ -238,12 +238,12 @@
 			"tag": "definition_psu",
 			"patterns": [
 				"what is psu",
-				"definition of psu",
-				"meaning of psu",
+				"the definition of psu",
+				"what is the meaning of psu",
 				"what is power supply unit",
 				"definition of power supply unit",
 				"meaning of power supply unit",
-				"psu function",
+				"the function of psu",
 				"psu purpose"
 			],
 			"responses": [
@@ -266,12 +266,12 @@
 			"tag": "definition_ram",
 			"patterns": [
 				"what is ram",
-				"definition of ram",
-				"meaning of ram",
+				"what is the definition of ram",
+				"the meaning of ram",
 				"what is random access memory",
 				"definition of random access memory",
 				"meaning of random access memory",
-				"ram function",
+				"the ram function",
 				"ram purpose"
 			],
 			"responses": [
@@ -281,10 +281,10 @@
 		{
 			"tag": "ram_recommendation",
 			"patterns": [
-				"recommend a ram",
-				"suggest a ram",
-				"recommend a random access memory",
-				"suggest a random access memory",
+				"recommend a 3200hz ram",
+				"suggest a large ram",
+				"recommend a good random access memory",
+				"suggest a best random access memory",
 				"best ram for gaming",
 				"top ram options"
 			],
@@ -296,8 +296,8 @@
 			"tag": "definition_monitor",
 			"patterns": [
 				"what is monitor",
-				"definition of monitor",
-				"meaning of monitor",
+				"the definition of monitor",
+				"what is the meaning of monitor",
 				"computer monitor purpose",
 				"monitor function"
 			],
@@ -309,8 +309,8 @@
 		{
 			"tag": "monitor_recommendation",
 			"patterns": [
-				"recommend a monitor",
-				"suggest a monitor",
+				"recommend a big monitor",
+				"suggest a good monitor",
 				"best monitor for gaming",
 				"top monitor options",
 				"monitor suggestions"
@@ -321,7 +321,7 @@
 			"tag": "definition_motherboard",
 			"patterns": [
 				"what is motherboard",
-				"definition of motherboard",
+				"the definition of motherboard",
 				"meaning of motherboard",
 				"motherboard function",
 				"motherboard purpose"
