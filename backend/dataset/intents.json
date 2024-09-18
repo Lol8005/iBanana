@@ -357,9 +357,9 @@
 				"Custom PC assembly instructions"
 			],
 			"responses": [
-				"To build a PC, you need a:\n1. CPU \n2. GPU\n3. Motherboard\n4. RAM\n5. Storage\n6. CPU cooler\n7. PSU\n8. Nice looking case.\nYou can select the components based on your needs (Gaming, Video editing, Office ...)\nAfter you select the parts, you can tell our staff to build the custom PC for you.",
-				"Building a PC involves selecting the right components:\n1. CPU for processing power\n2. GPU for graphics performance\n3. Motherboard to connect everything\n4. RAM for memory\n5. Storage for data\n6. CPU cooler to prevent overheating\n7. PSU to power your system\n8. A case to hold it all together.\nIf you need help choosing parts, feel free to ask!",
-				"To start building your PC, make sure you have:\n1. A compatible CPU\n2. A good GPU\n3. A motherboard that fits\n4. Sufficient RAM\n5. Adequate storage options\n6. A reliable CPU cooler\n7. An efficient PSU\n8. A stylish case. \nLet me know if you need recommendations for any specific components!"
+				"To build a PC, you need a:<ol><li>CPU</li><li>GPU</li><li>Motherboard</li><li>RAM</li><li>Storage</li><li>CPU cooler</li><li>PSU</li><li>Nice looking case</li></ol>You can select the components based on your needs (Gaming, Video editing, Office ...) <br>After you select the parts, you can tell our staff to build the custom PC for you.",
+                "Building a PC involves selecting the right components:<ol><li>CPU for processing power</li><li>GPU for graphics performance</li><li>Motherboard to connect everything</li><li>RAM for memory</li><li>Storage for data</li><li>CPU cooler to prevent overheating</li><li>PSU to power your system</li><li>A case to hold it all together.</li></ol>If you need help choosing parts, feel free to ask!",
+                "To start building your PC, make sure you have:<ol><li>A compatible CPU</li><li>A good GPU</li><li>A motherboard that fits</li><li>Sufficient RAM</li><li>Adequate storage options</li><li>A reliable CPU cooler</li><li>An efficient PSU</li><li>A stylish case</li></ol>Let me know if you need recommendations for any specific components!"
 			]
 		},
 		{
@@ -376,7 +376,7 @@
 				"what services do you offer"
 			],
 			"responses": [
-				"I am a general purpose chatbot. My capabilities are: \n 1. Answering General Questions\n 2. Providing General Recommendations\n 3. Explaining the definitions of our products\n The chatbot is currently still improving. \nFor suggestions, kindly send an email to suggestion@ibanana.com. Thank you!"
+				"I am a general purpose chatbot. My capabilities are:<ol><li>Answering General Questions</li><li>Providing General Recommendations</li><li>Explaining the definitions of our products</li></ol>The chatbot is currently still improving.<br>For suggestions, kindly send an email to suggestion@ibanana.com. Thank you!"
 			]
 		}
 	]
