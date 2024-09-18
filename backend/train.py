@@ -59,9 +59,9 @@ y_train = np.array(y_train)
 # Hyper-parameters 
 num_epochs = 1000
 batch_size = 1
-learning_rate = 0.001
+learning_rate = 1e-3
 input_size = len(X_train[0])
-hidden_size = 24
+hidden_size = 8
 output_size = len(tags)
 print(input_size, output_size)
 
@@ -95,8 +95,7 @@ model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
 #optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 outputs = None
 

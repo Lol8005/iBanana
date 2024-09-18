@@ -343,6 +343,26 @@
 			"responses": ["Here is a Motherboard recommendation."]
 		},
 		{
+			"tag": "question_build_pc",
+			"patterns": [
+				"How to build a PC",
+				"Assemble a custom PC system",
+				"Build a personal computer from scratch",
+				"Develop a computer for specialized tasks",
+				"Steps to build a PC",
+				"What do I need to build a computer?",
+				"How to assemble a PC",
+				"DIY PC building guide",
+				"Guide to building a PC",
+				"Custom PC assembly instructions"
+			],
+			"responses": [
+				"To build a PC, you need a:\n1. CPU \n2. GPU\n3. Motherboard\n4. RAM\n5. Storage\n6. CPU cooler\n7. PSU\n8. Nice looking case.\nYou can select the components based on your needs (Gaming, Video editing, Office ...)\nAfter you select the parts, you can tell our staff to build the custom PC for you.",
+				"Building a PC involves selecting the right components:\n1. CPU for processing power\n2. GPU for graphics performance\n3. Motherboard to connect everything\n4. RAM for memory\n5. Storage for data\n6. CPU cooler to prevent overheating\n7. PSU to power your system\n8. A case to hold it all together.\nIf you need help choosing parts, feel free to ask!",
+				"To start building your PC, make sure you have:\n1. A compatible CPU\n2. A good GPU\n3. A motherboard that fits\n4. Sufficient RAM\n5. Adequate storage options\n6. A reliable CPU cooler\n7. An efficient PSU\n8. A stylish case. \nLet me know if you need recommendations for any specific components!"
+			]
+		},
+		{
 			"tag": "options",
 			"patterns": [
 				"how could you help me",
