@@ -82,15 +82,15 @@
 			"tag": "cpu_recommendation",
 			"patterns": [
 				"recommend a good cpu",
-				"best cpu for gaming",
-				"cpu for video editing",
+				"recommend best cpu for gaming",
+				"recommend cpu for video editing",
 				"recommend a central processing unit",
-				"best central processing unit for gaming",
-				"central processing unit for video editing",
+				"recommend best central processing unit for gaming",
+				"recommend central processing unit for video editing",
 				"recommend a processor",
-				"best processor for gaming",
-				"processor for video editing",
-				"top cpu for gaming",
+				"recommend best processor for gaming",
+				"recommend processor for video editing",
+				"recommend top cpu for gaming",
 				"cpu suggestions for normal usage"
 			],
 			"responses": [
@@ -114,9 +114,9 @@
 			"tag": "cpu_cooler_recommendation",
 			"patterns": [
 				"recommend a cpu cooler",
-				"best cpu cooler for gaming",
-				"cpu cooler for video editing",
-				"top cpu coolers",
+				"recommend best cpu cooler for gaming",
+				"recommend cpu cooler for video editing",
+				"recommend top cpu coolers",
 				"provide me some cpu cooler suggestions"
 			],
 			"responses": ["Here is a CPU Cooler recommendation."]
@@ -141,12 +141,12 @@
 			"tag": "gpu_recommendation",
 			"patterns": [
 				"recommend a gpu",
-				"best gpu for gaming",
-				"gpu for video editing",
+				"recommend best gpu for gaming",
+				"recommend gpu for video editing",
 				"recommend a graphics processing units",
-				"best graphics processing units for gaming",
-				"graphics processing units for video editing",
-				"top gpu for gaming",
+				"recommend best graphics processing units for gaming",
+				"recommend graphics processing units for video editing",
+				"recommend top gpu for gaming",
 				"gpu suggestions for normal uses cases"
 			],
 			"responses": [
@@ -171,8 +171,8 @@
 			"patterns": [
 				"recommend a ATX or mini ATX case",
 				"suggest a ATX case",
-				"best computer case for ATX size",
-				"top cases for PCs"
+				"recommend best computer case for ATX size",
+				"recommend top cases for PCs"
 			],
 			"responses": ["Here is a Case recommendation."]
 		},
@@ -200,8 +200,8 @@
 				"suggest a good hdd",
 				"recommend a large hard disk drive",
 				"suggest a hard disk drive",
-				"best hdd for storage",
-				"top hard drives"
+				"recommend best hdd for storage",
+				"recommend top hard drives"
 			],
 			"responses": ["Here is a Hard Disk Drive (HDD) recommendation."]
 		},
@@ -229,8 +229,8 @@
 				"suggest a nvme ssd",
 				"recommend a nvme solid-state drive",
 				"suggest a good nvme solid-state drive",
-				"best nvme ssd for performance",
-				"top solid-state drives"
+				"recommend best nvme ssd for performance",
+				"recommend top solid-state drives"
 			],
 			"responses": ["Here is a Soft-State Drive (SSD) recommendation."]
 		},
@@ -257,8 +257,8 @@
 				"suggest a psu",
 				"recommend a power supply unit",
 				"suggest a power supply unit",
-				"best psu for gaming",
-				"top power supply units"
+				"recommend best psu for gaming",
+				"recommend top power supply units"
 			],
 			"responses": ["Here is a Power Supply Unit (PSU) recommendation."]
 		},
@@ -285,8 +285,8 @@
 				"suggest a large ram",
 				"recommend a good random access memory",
 				"suggest a best random access memory",
-				"best ram for gaming",
-				"top ram options"
+				"recommend best ram for gaming",
+				"recommend top ram options"
 			],
 			"responses": [
 				"Here is a Random Access Memory (RAM) recommendation."
@@ -311,8 +311,8 @@
 			"patterns": [
 				"recommend a big monitor",
 				"suggest a good monitor",
-				"best monitor for gaming",
-				"top monitor options",
+				"recommend best monitor for gaming",
+				"recommend top monitor options",
 				"monitor suggestions"
 			],
 			"responses": ["Here is a Monitor recommendation."]
@@ -337,7 +337,7 @@
 			"patterns": [
 				"recommend a motherboard",
 				"suggest a motherboard",
-				"best motherboard for gaming",
+				"recommend best motherboard for gaming",
 				"top motherboard options"
 			],
 			"responses": ["Here is a Motherboard recommendation."]
