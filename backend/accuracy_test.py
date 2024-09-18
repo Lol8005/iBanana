@@ -1,7 +1,7 @@
 from chatbot import predict_chat
 import json
 
-with open('backend/dataset/intents.json', 'r',  encoding='utf-8') as f:
+with open('backend/dataset/intents_cleaned.json', 'r',  encoding='utf-8') as f:
     intents = json.load(f)
 
 correct = total = 0

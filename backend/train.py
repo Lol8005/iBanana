@@ -12,7 +12,7 @@ import time
 
 start_time = time.perf_counter()
 
-with open('backend/dataset/intents.json', encoding='utf-8') as f:
+with open('backend/dataset/intents_cleaned.json', encoding='utf-8') as f:
     intents = json.load(f)
 
 all_words = []

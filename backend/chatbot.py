@@ -8,7 +8,7 @@ from textblob import TextBlob
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('backend/dataset/intents.json', encoding='utf-8') as json_data:
+with open('backend/dataset/intents_cleaned.json', encoding='utf-8') as json_data:
     intents = json.load(json_data)
 
 FILE = "backend/dataset/trained_data.pth"
