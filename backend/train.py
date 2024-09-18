@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
 from nltk_utils import bag_of_words, tokenize, stem
-from model import NeuralNetwork2
+from model import NeuralNetwork
 
 import time
 
@@ -58,10 +58,10 @@ y_train = np.array(y_train)
 
 # Hyper-parameters 
 num_epochs = 1000
-batch_size = 8
+batch_size = 1
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 24
 output_size = len(tags)
 print(input_size, output_size)
 
@@ -90,11 +90,13 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 print(f"Using {device}")
 
-model = NeuralNetwork2(input_size, hidden_size, output_size).to(device)
+model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+#optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+
 
 outputs = None
 
@@ -107,11 +109,7 @@ for epoch in range(num_epochs):
         # Forward pass
         outputs = model(words)
 
-        # visualize NN model
-        
-
         # if y would be one-hot, we must apply
-        # labels = torch.max(labels, 1)[1]
         loss = criterion(outputs, labels)
         
         # Backward and optimize
@@ -138,3 +136,5 @@ FILE = "backend/dataset/trained_data.pth"
 torch.save(data, FILE)
 
 print(f'training complete. Time taken: {round(time.perf_counter() - start_time, 2)}. file saved to {FILE}')
+
+import accuracy_test

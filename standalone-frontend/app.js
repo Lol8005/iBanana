@@ -67,7 +67,7 @@ class Chatbox {
             textField.value = ''
           });
         }else{
-            fetch($SCRIPT_ROOT+":8888/conversation2", {
+            fetch($SCRIPT_ROOT+":8888/conversation", {
                 method: 'POST',
                 body: JSON.stringify({ message: text1 }),
                 mode: 'cors',

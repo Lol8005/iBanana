@@ -1,327 +1,363 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "hi",
-          "hello",
-          "hey",
-          "good morning",
-          "good afternoon",
-          "howdy",
-          "is anyone there?",
-          "yo"
-        ],
-        "responses": [
-          "Hello! How can I assist you today?",
-          "Hi there! What can I do for you?",
-          "Hey! Need any help?",
-          "Greetings! How can I help?"
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": [
-          "thanks",
-          "thank you",
-          "thx",
-          "that's helpful",
-          "thanks for the help",
-          "I appreciate it"
-        ],
-        "responses": [
-          "You're welcome!",
-          "Glad to be of assistance!",
-          "No problem!",
-          "Happy to help!"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "bye",
-          "goodbye",
-          "see you later",
-          "talk to you soon",
-          "farewell"
-        ],
-        "responses": [
-          "Goodbye! Have a great day!",
-          "Take care! See you next time.",
-          "Bye! Looking forward to our next chat!",
-          "Goodbye! Come back if you need anything else!"
-        ]
-      },
-      {
-        "tag": "definition_cpu",
-        "patterns": [
-          "what is cpu",
-          "definition of cpu",
-          "meaning of cpu",
-          "what is central processing unit",
-          "definition of central processing unit",
-          "meaning of central processing unit",
-          "what is processor",
-          "definition of processor",
-          "meaning of processor"
-        ],
-        "responses": [
-          "The CPU, also referred to as the “central” or “main” processor, is a complex set of electronic circuitry that runs the machine's operating system and apps. The CPU interprets, processes and executes instructions, most often from the hardware and software programs running on the device."
-        ]
-      },
-      {
-        "tag": "cpu_recommendation",
-        "patterns": [
-          "recommend a cpu",
-          "best cpu for gaming",
-          "cpu for video editing",
-          "recommend a central processing unit",
-          "best central processing unit for gaming",
-          "central processing unit for video editing",
-          "recommend a processor",
-          "best processor for gaming",
-          "processor for video editing"
-        ],
-        "responses": [
-          "Here is a Central Processing Unit (CPU) recommendation."
-        ]
-      },
-      {
-        "tag": "definition_cooler",
-        "patterns": [
-          "what is cpu cooler",
-          "definition of cpu cooler",
-          "meaning of cpu cooler"
-        ],
-        "responses": [
-          "A CPU cooler is device designed to draw heat away from the system CPU and other components in the enclosure."
-        ]
-      },
-      {
-        "tag": "cpu_cooler_recommendation",
-        "patterns": [
-          "recommend a cpu cooler",
-          "best cpu cooler for gaming",
-          "cpu cooler for video editing"
-        ],
-        "responses": [
-          "Here is a CPU Cooler recommendation."
-        ]
-      },
-      {
-        "tag": "definition_gpu",
-        "patterns": [
-          "what is gpu",
-          "definition of gpu",
-          "meaning of gpu",
-          "what is graphics processing units",
-          "definition of graphics processing units",
-          "meaning of graphics processing units"
-        ],
-        "responses": [
-          "A graphics processing unit is a specialized electronic circuit initially designed for digital image processing and to accelerate computer graphics, being present either as a discrete video card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles."
-        ]
-      },
-      {
-        "tag": "gpu_recommendation",
-        "patterns": [
-          "recommend a gpu",
-          "best gpu for gaming",
-          "gpu for video editing",
-          "recommend a graphics processing units",
-          "best graphics processing units for gaming",
-          "graphics processing units for video editing"
-        ],
-        "responses": [
-          "Here is a Graphic Processing Units (GPU) recommendation."
-        ]
-      },
-      {
-        "tag": "definition_case",
-        "patterns": [
-          "what is case",
-          "definition of case",
-          "meaning of case"
-        ],
-        "responses": [
-          "A computer case, also known as a computer chassis, is the enclosure that contains most of the hardware of a personal computer."
-        ]
-      },
-      {
-        "tag": "case_recommendation",
-        "patterns": [
-          "recommend a case",
-          "suggest a case"
-        ],
-        "responses": [
-          "Here is a Case recommendation."
-        ]
-      },
-      {
-        "tag": "definition_hdd",
-        "patterns": [
-          "what is hdd",
-          "definition of hdd",
-          "meaning of hdd",
-          "what is hard disk drive",
-          "definition of hard disk drive",
-          "meaning of hard disk drive"
-        ],
-        "responses": [
-          "A hard disk drive (HDD) is an internal or external computer component that stores data, such as the operating system, applications, and user files.",
-          "HDDs are “non-volatile” storage devices, meaning they retain stored data even when power isn't being supplied."
-        ]
-      },
-      {
-        "tag": "hdd_recommendation",
-        "patterns": [
-          "recommend a hdd",
-          "suggest a hdd",
-          "recommend a hard disk drive",
-          "suggest a hard disk drive"
-        ],
-        "responses": [
-          "Here is a Hard Disk Drive (HDD) recommendation."
-        ]
-      },
-      {
-        "tag": "definition_ssd",
-        "patterns": [
-          "what is ssd",
-          "definition of ssd",
-          "meaning of ssd",
-          "what is soft-state drive",
-          "definition of soft-state drive",
-          "meaning of soft-state drive"
-        ],
-        "responses": [
-          "A solid-state drive is a type of solid-state storage device that uses integrated circuits to store data persistently.",
-          "SSDs sometimes called semiconductor storage device, solid-state device, and solid-state disk."
-        ]
-      },
-      {
-        "tag": "ssd_recommendation",
-        "patterns": [
-          "recommend a ssd",
-          "suggest a ssd",
-          "recommend a soft-state drive",
-          "suggest a soft-state drive"
-        ],
-        "responses": [
-          "Here is a Soft-State Drive (SSD) recommendation."
-        ]
-      },
-      {
-        "tag": "definition_psu",
-        "patterns": [
-          "what is psu",
-          "definition of psu",
-          "meaning of psu",
-          "what is power supply unit",
-          "definition of power supply unit",
-          "meaning of power supply unit"
-        ],
-        "responses": [
-          "A power supply unit (PSU) is a hardware device that converts AC electricity into DC electricity and then distributes it to the rest of the computer."
-        ]
-      },
-      {
-        "tag": "psu_recommendation",
-        "patterns": [
-          "recommend a psu",
-          "suggest a psu",
-          "recommend a power supply unit",
-          "suggest a power supply unit"
-        ],
-        "responses": [
-          "Here is a Power Supply Unit (PSU) recommendation."
-        ]
-      },
-      {
-        "tag": "definition_ram",
-        "patterns": [
-          "what is ram",
-          "definition of ram",
-          "meaning of ram",
-          "what is random access memory",
-          "definition of random access memory",
-          "meaning of random access memory"
-        ],
-        "responses": [
-          "Random-access memory is a form of electronic computer memory that can be read and changed in any order, typically used to store working data and machine code."
-        ]
-      },
-      {
-        "tag": "ram_recommendation",
-        "patterns": [
-          "recommend a ram",
-          "suggest a ram",
-          "recommend a random access memory",
-          "suggest a random access memory"
-        ],
-        "responses": [
-          "Here is a Random Access Memory (RAM) recommendation."
-        ]
-      },
-      {
-        "tag": "definition_monitor",
-        "patterns": [
-          "what is monitor",
-          "definition of monitor",
-          "meaning of monitor"
-        ],
-        "responses": [
-          "A computer monitor is an output device that displays information in pictorial or textual form.",
-          "A discrete monitor comprises a visual display, support electronics, power supply, housing, electrical connectors, and external user controls."
-        ]
-      },
-      {
-        "tag": "monitor_recommendation",
-        "patterns": [
-          "recommend a monitor",
-          "suggest a monitor"
-        ],
-        "responses": [
-          "Here is a Monitor recommendation."
-        ]
-      },
-      {
-        "tag": "definition_motherboard",
-        "patterns": [
-          "what is motherboard",
-          "definition of motherboard",
-          "meaning of motherboard"
-        ],
-        "responses": [
-          "A motherboard is the main printed circuit board (PCB) in a computer.",
-          "The motherboard is a computer's central communications backbone connectivity point, through which all components and external peripherals connect.",
-          "Motherboards can be found in virtually all computers, especially desktop and laptop PCs."
-        ]
-      },
-      {
-        "tag": "motherboard_recommendation",
-        "patterns": [
-          "recommend a motherboard",
-          "suggest a motherboard"
-        ],
-        "responses": [
-          "Here is a Motherboard recommendation."
-        ]
-      },
-      {
-        "tag": "options",
-        "patterns": [
-          "how could you help me",
-          "what could you do",
-          "what could you do to assist me",
-          "what you can do",
-          "what help you provide",
-          "how you can be helpful",
-          "what support is offered"
-        ],
-        "responses": [
-          "I am a general purpose chatbot. My capabilities are : \n 1. Answering General Question\n 2. Providing General Recommendations\n 3. Explain the definition of our products\n The chatbot is currently still improving. \nFor suggestions, kindly send an email to suggestion@ibanana.com. Thank you!! "
-        ]
-      }
-    ]
-  }
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"hi",
+				"hello",
+				"hey",
+				"good morning",
+				"good afternoon",
+				"is anyone there?",
+				"what's up?",
+				"greetings"
+			],
+			"responses": [
+				"Hello! How can I assist you today? 😊",
+				"Hi there! What can I do for you? If you need any recommendations or have questions, just ask!",
+				"Hey! Need any help? I'm here to provide information or advice on tech and more.",
+				"Greetings! How can I help? Feel free to ask me anything or let me know what you're looking for."
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"thanks",
+				"thank you",
+				"that's helpful",
+				"thanks for the help",
+				"I appreciate it",
+				"thanks a lot",
+				"thank you very much",
+				"thanks for your assistance",
+				"much appreciated"
+			],
+			"responses": [
+				"You're welcome!",
+				"Glad to be of assistance!",
+				"No problem!",
+				"Happy to help!"
+			]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"bye",
+				"goodbye",
+				"see you later",
+				"talk to you soon",
+				"farewell",
+				"take care",
+				"catch you later",
+				"see you",
+				"have a nice day"
+			],
+			"responses": [
+				"Goodbye! Have a great day!",
+				"Take care! See you next time.",
+				"Bye! Looking forward to our next chat!",
+				"Goodbye! Come back if you need anything else!"
+			]
+		},
+		{
+			"tag": "definition_cpu",
+			"patterns": [
+				"what is cpu",
+				"definition of cpu",
+				"meaning of cpu",
+				"what is central processing unit",
+				"definition of central processing unit",
+				"meaning of central processing unit",
+				"what is processor",
+				"definition of processor",
+				"meaning of processor",
+				"cpu explanation",
+				"cpu purpose"
+			],
+			"responses": [
+				"The CPU, also referred to as the “central” or “main” processor, is a complex set of electronic circuitry that runs the machine's operating system and apps. The CPU interprets, processes and executes instructions, most often from the hardware and software programs running on the device."
+			]
+		},
+		{
+			"tag": "cpu_recommendation",
+			"patterns": [
+				"recommend a cpu",
+				"best cpu for gaming",
+				"cpu for video editing",
+				"recommend a central processing unit",
+				"best central processing unit for gaming",
+				"central processing unit for video editing",
+				"recommend a processor",
+				"best processor for gaming",
+				"processor for video editing",
+				"top cpu for gaming",
+				"cpu suggestions"
+			],
+			"responses": [
+				"Here is a Central Processing Unit (CPU) recommendation."
+			]
+		},
+		{
+			"tag": "definition_cooler",
+			"patterns": [
+				"what is cpu cooler",
+				"definition of cpu cooler",
+				"meaning of cpu cooler",
+				"cpu cooler function",
+				"why do I need a cpu cooler"
+			],
+			"responses": [
+				"A CPU cooler is a device designed to draw heat away from the system CPU and other components in the enclosure."
+			]
+		},
+		{
+			"tag": "cpu_cooler_recommendation",
+			"patterns": [
+				"recommend a cpu cooler",
+				"best cpu cooler for gaming",
+				"cpu cooler for video editing",
+				"top cpu coolers",
+				"cpu cooler suggestions"
+			],
+			"responses": ["Here is a CPU Cooler recommendation."]
+		},
+		{
+			"tag": "definition_gpu",
+			"patterns": [
+				"what is gpu",
+				"definition of gpu",
+				"meaning of gpu",
+				"what is graphics processing units",
+				"definition of graphics processing units",
+				"meaning of graphics processing units",
+				"gpu purpose",
+				"gpu functionality"
+			],
+			"responses": [
+				"A graphics processing unit is a specialized electronic circuit initially designed for digital image processing and to accelerate computer graphics, being present either as a discrete video card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles."
+			]
+		},
+		{
+			"tag": "gpu_recommendation",
+			"patterns": [
+				"recommend a gpu",
+				"best gpu for gaming",
+				"gpu for video editing",
+				"recommend a graphics processing units",
+				"best graphics processing units for gaming",
+				"graphics processing units for video editing",
+				"top gpu for gaming",
+				"gpu suggestions"
+			],
+			"responses": [
+				"Here is a Graphic Processing Units (GPU) recommendation."
+			]
+		},
+		{
+			"tag": "definition_case",
+			"patterns": [
+				"what is case",
+				"definition of case",
+				"meaning of case",
+				"what is a computer case",
+				"computer case purpose"
+			],
+			"responses": [
+				"A computer case, also known as a computer chassis, is the enclosure that contains most of the hardware of a personal computer."
+			]
+		},
+		{
+			"tag": "case_recommendation",
+			"patterns": [
+				"recommend a case",
+				"suggest a case",
+				"best computer case",
+				"top cases for PCs"
+			],
+			"responses": ["Here is a Case recommendation."]
+		},
+		{
+			"tag": "definition_hdd",
+			"patterns": [
+				"what is hdd",
+				"definition of hdd",
+				"meaning of hdd",
+				"what is hard disk drive",
+				"definition of hard disk drive",
+				"meaning of hard disk drive",
+				"hdd function",
+				"hdd purpose"
+			],
+			"responses": [
+				"A hard disk drive (HDD) is an internal or external computer component that stores data, such as the operating system, applications, and user files.",
+				"HDDs are “non-volatile” storage devices, meaning they retain stored data even when power isn't being supplied."
+			]
+		},
+		{
+			"tag": "hdd_recommendation",
+			"patterns": [
+				"recommend a hdd",
+				"suggest a hdd",
+				"recommend a hard disk drive",
+				"suggest a hard disk drive",
+				"best hdd for storage",
+				"top hard drives"
+			],
+			"responses": ["Here is a Hard Disk Drive (HDD) recommendation."]
+		},
+		{
+			"tag": "definition_ssd",
+			"patterns": [
+				"what is ssd",
+				"definition of ssd",
+				"meaning of ssd",
+				"what is solid-state drive",
+				"definition of solid-state drive",
+				"meaning of solid-state drive",
+				"ssd function",
+				"ssd purpose"
+			],
+			"responses": [
+				"A solid-state drive is a type of solid-state storage device that uses integrated circuits to store data persistently.",
+				"SSDs are sometimes called semiconductor storage devices, solid-state devices, and solid-state disks."
+			]
+		},
+		{
+			"tag": "ssd_recommendation",
+			"patterns": [
+				"recommend a ssd",
+				"suggest a ssd",
+				"recommend a solid-state drive",
+				"suggest a solid-state drive",
+				"best ssd for performance",
+				"top solid-state drives"
+			],
+			"responses": ["Here is a Soft-State Drive (SSD) recommendation."]
+		},
+		{
+			"tag": "definition_psu",
+			"patterns": [
+				"what is psu",
+				"definition of psu",
+				"meaning of psu",
+				"what is power supply unit",
+				"definition of power supply unit",
+				"meaning of power supply unit",
+				"psu function",
+				"psu purpose"
+			],
+			"responses": [
+				"A power supply unit (PSU) is a hardware device that converts AC electricity into DC electricity and then distributes it to the rest of the computer."
+			]
+		},
+		{
+			"tag": "psu_recommendation",
+			"patterns": [
+				"recommend a psu",
+				"suggest a psu",
+				"recommend a power supply unit",
+				"suggest a power supply unit",
+				"best psu for gaming",
+				"top power supply units"
+			],
+			"responses": ["Here is a Power Supply Unit (PSU) recommendation."]
+		},
+		{
+			"tag": "definition_ram",
+			"patterns": [
+				"what is ram",
+				"definition of ram",
+				"meaning of ram",
+				"what is random access memory",
+				"definition of random access memory",
+				"meaning of random access memory",
+				"ram function",
+				"ram purpose"
+			],
+			"responses": [
+				"Random-access memory is a form of electronic computer memory that can be read and changed in any order, typically used to store working data and machine code."
+			]
+		},
+		{
+			"tag": "ram_recommendation",
+			"patterns": [
+				"recommend a ram",
+				"suggest a ram",
+				"recommend a random access memory",
+				"suggest a random access memory",
+				"best ram for gaming",
+				"top ram options"
+			],
+			"responses": [
+				"Here is a Random Access Memory (RAM) recommendation."
+			]
+		},
+		{
+			"tag": "definition_monitor",
+			"patterns": [
+				"what is monitor",
+				"definition of monitor",
+				"meaning of monitor",
+				"computer monitor purpose",
+				"monitor function"
+			],
+			"responses": [
+				"A computer monitor is an output device that displays information in pictorial or textual form.",
+				"A discrete monitor comprises a visual display, support electronics, power supply, housing, electrical connectors, and external user controls."
+			]
+		},
+		{
+			"tag": "monitor_recommendation",
+			"patterns": [
+				"recommend a monitor",
+				"suggest a monitor",
+				"best monitor for gaming",
+				"top monitor options",
+				"monitor suggestions"
+			],
+			"responses": ["Here is a Monitor recommendation."]
+		},
+		{
+			"tag": "definition_motherboard",
+			"patterns": [
+				"what is motherboard",
+				"definition of motherboard",
+				"meaning of motherboard",
+				"motherboard function",
+				"motherboard purpose"
+			],
+			"responses": [
+				"A motherboard is the main printed circuit board (PCB) in a computer.",
+				"The motherboard is a computer's central communications backbone connectivity point, through which all components and external peripherals connect.",
+				"Motherboards can be found in virtually all computers, especially desktop and laptop PCs."
+			]
+		},
+		{
+			"tag": "motherboard_recommendation",
+			"patterns": [
+				"recommend a motherboard",
+				"suggest a motherboard",
+				"best motherboard for gaming",
+				"top motherboard options"
+			],
+			"responses": ["Here is a Motherboard recommendation."]
+		},
+		{
+			"tag": "options",
+			"patterns": [
+				"how could you help me",
+				"what could you do",
+				"what could you do to assist me",
+				"what you can do",
+				"what help you provide",
+				"how you can be helpful",
+				"what support is offered",
+				"how can you assist me",
+				"what services do you offer"
+			],
+			"responses": [
+				"I am a general purpose chatbot. My capabilities are: \n 1. Answering General Questions\n 2. Providing General Recommendations\n 3. Explaining the definitions of our products\n The chatbot is currently still improving. \nFor suggestions, kindly send an email to suggestion@ibanana.com. Thank you!"
+			]
+		}
+	]
+}
