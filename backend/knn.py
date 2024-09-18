@@ -1,11 +1,12 @@
 import json
+import string
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load intents.json
-with open('backend/dataset/intents.json', encoding='utf-8') as file:
+with open('backend/dataset/intents_cleaned.json', encoding='utf-8') as file:
     intents_data = json.load(file)
 
 intents = intents_data['intents']
@@ -291,6 +292,7 @@ def get_motherboard_recommendation():
 def generate_response(user_input):
     # Pre-processing
     user_input = user_input.lower().strip()  # Convert to lowercase and remove any extra spaces
+    user_input = user_input.translate(str.maketrans("", "", string.punctuation))
     intent = classify_intent(user_input)
     
     # View predicted intent
@@ -327,20 +329,20 @@ def generate_response(user_input):
 
 print("KNN run successfully!")
 # Test the chatbot
-#test_inputs = [
+test_inputs = [
 #    "recommend ssd",
 #    "best hdd?",
 #    "what is the best cooler for gaming? recommend one",
-#    "recommend ram",
+    "give me the definition of ram",
 #    "what is the best cpu for gaming? recommend one",
 #    "recommend motherboard",
 #    "recommend monitor",
 #    "recommend psu",
 #    "recommend case",
 #    "recommend gpu"
-#]
+]
 
-#for user_input in test_inputs:
-#    response = generate_response(user_input)
-#    print(f"You: {user_input}")
-#    print(f"Chatbot: {response}\n")
+for user_input in test_inputs:
+    response = generate_response(user_input)
+    print(f"You: {user_input}")
+    print(f"Chatbot: {response}\n")
