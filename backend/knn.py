@@ -24,37 +24,25 @@ for intent in intents:
     responses_dict[intent['tag']] = intent['responses']
 
 # Load CPU data
-cpu_data = pd.read_csv('backend/dataset/CPUData.csv')
+cpu_data = pd.read_csv('backend/dataset/cleaned_cpu_data.csv')
 # Load Cooler data
-cooler_data = pd.read_csv('backend/dataset/CPUCoolerData.csv')
+cooler_data = pd.read_csv('backend/dataset/cleaned_cooler_data.csv')
 # Load Case data
-case_data = pd.read_csv('backend/dataset/CaseData.csv')
+case_data = pd.read_csv('backend/dataset/cleaned_case_data.csv')
 # Load GPU data
-gpu_data = pd.read_csv('backend/dataset/GPUData.csv')
+gpu_data = pd.read_csv('backend/dataset/cleaned_gpu_data.csv')
 # Load HDD data
-hdd_data = pd.read_csv('backend/dataset/HDDData.csv')
+hdd_data = pd.read_csv('backend/dataset/cleaned_hdd_data.csv')
 # Load Monitor data
-monitor_data = pd.read_csv('backend/dataset/MonitorData.csv')
+monitor_data = pd.read_csv('backend/dataset/cleaned_monitor_data.csv')
 # Load Motherboard data
-motherboard_data = pd.read_csv('backend/dataset/MotherboardData.csv')
+motherboard_data = pd.read_csv('backend/dataset/cleaned_motherboard_data.csv')
 # Load PSU data
-psu_data = pd.read_csv('backend/dataset/PSUData.csv')
+psu_data = pd.read_csv('backend/dataset/cleaned_psu_data.csv')
 # Load RAM data
-ram_data = pd.read_csv('backend/dataset/RAMData.csv')
+ram_data = pd.read_csv('backend/dataset/cleaned_ram_data.csv')
 # Load SSD data
-ssd_data = pd.read_csv('backend/dataset/SSDData.csv')
-
-#Remove duplicate
-cpu_data.drop_duplicates(inplace=True)
-gpu_data.drop_duplicates(inplace=True)
-psu_data.drop_duplicates(inplace=True)
-ram_data.drop_duplicates(inplace=True)
-hdd_data.drop_duplicates(inplace=True)
-monitor_data.drop_duplicates(inplace=True)
-motherboard_data.drop_duplicates(inplace=True)
-cooler_data.drop_duplicates(inplace=True)
-case_data.drop_duplicates(inplace=True)
-
+ssd_data = pd.read_csv('backend/dataset/cleaned_ssd_data.csv')
 
 # Vectorize the patterns
 vectorizer = TfidfVectorizer()
