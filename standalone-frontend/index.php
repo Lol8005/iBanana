@@ -11,7 +11,7 @@ include 'product_cardgroup/productClass.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iBanana</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"   />
     <style>
         .card-footer .h2 {
             font-size: 1em;
@@ -21,27 +21,166 @@ include 'product_cardgroup/productClass.php';
         button.px-5 {
             padding: 5px 1em 5px 1em !important;
         }
-        .long-para{
+
+        .long-para {
             text-align: justify;
         }
-        .section-title{
+
+        .section-title {
             margin-bottom: 10px;
             text-align: center;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        /*Slideshow css */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 3s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
         }
     </style>
 
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        $AI = 1;
+    </script>
 </head>
 
 <body>
     <main>
         <section id="Home">
+            <br>
+            <p>Select a algorithm:</p>
 
+            <select id="mySelect" onchange="myFunction()">
+                <option value="2">K-Nearest Neighbors</option>
+                <option value="1">Multilayer Neural Network</option>
+            </select>
+            <br>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <div style="width:100%;height:300;background-color:black;display:flex;justify-content:center;">
+                        <img src="images/1.png" style="height:300">
+                    </div>
+                    <div class="text">iBanana - Computer Hardware Store</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <div style="width:100%;height:300;background-color:black;display:flex;justify-content:center;">
+                        <img src="images/2.png" style="height:300">
+                    </div>
+                    <div class="text">10.10 Promotion Up to 70% off</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <div style="width:100%;height:300;background-color:black;display:flex;justify-content:center;">
+                        <img src="images/3.png" style="height:300">
+                    </div>
+                    <div class="text">We are proudly announced as the largest tech store in Malaysia!</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
         </section>
         <br>
         <section id="AboutUs">
-            <h1 class="section-title">About Us</h1>
+            <h1 class="section-title">About Us</h1><br>
             <p class="long-para">At iBanana, we believe that tech should be simple, reliable,
                 and accessible to everyone. Established with a passion for
                 innovation, we specialize in providing high-quality computer
@@ -124,7 +263,10 @@ include 'product_cardgroup/productClass.php';
         <script>
             $SCRIPT_ROOT = window.location.protocol + '//' + window.location.hostname;
             //Change AI here, 1=Multilayer NN 2=KNN
-            $AI=2;
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                $AI = x;
+            }
         </script>
         <script src="./app.js"></script>
     </main>
