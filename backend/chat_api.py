@@ -12,12 +12,13 @@ def convesation():
     # passed data
     data = request.get_json().get("message")
 
-    prediction = predict_chat(data)
+    (prediction, tag) = predict_chat(data)
 
-    print(data + " --> " + prediction)
+    print(data + " --> " + prediction + " " + tag)
 
     response = {
-        "bot_response": prediction
+        "bot_response": prediction,
+        "tag": tag
     }
 
     return jsonify(response), 201

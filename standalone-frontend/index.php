@@ -252,8 +252,6 @@ include 'product_cardgroup/productClass.php';
         </div>
         <script>
             $SCRIPT_ROOT = window.location.protocol + '//' + window.location.hostname;
-            //Change AI here, 1=Multilayer NN 2=KNN
-            $AI=2;
         </script>
         <script src="./app.js"></script>
     </main>

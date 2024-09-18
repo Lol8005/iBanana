@@ -45,7 +45,7 @@ class Chatbox {
 
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
-        if($AI==1){
+        
         fetch($SCRIPT_ROOT+":8888/conversation", {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
@@ -66,28 +66,6 @@ class Chatbox {
             this.updateChatText(chatbox)
             textField.value = ''
           });
-        }else{
-            fetch($SCRIPT_ROOT+":8888/conversation", {
-                method: 'POST',
-                body: JSON.stringify({ message: text1 }),
-                mode: 'cors',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-              })
-              .then(r => r.json())
-              .then(r => {
-                let msg2 = { name: "Samantha", message: r.bot_response };
-                this.messages.push(msg2);
-                this.updateChatText(chatbox)
-                textField.value = ''
-    
-            }).catch((error) => {
-                console.error('Error:', error);
-                this.updateChatText(chatbox)
-                textField.value = ''
-              });
-        }
     }
 
     updateChatText(chatbox) {
