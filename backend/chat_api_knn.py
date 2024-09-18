@@ -5,7 +5,7 @@ from knn import generate_response
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/conversation2", methods=["POST"])
+@app.route("/conversation", methods=["POST"])
 def convesation():
     # passed data
     data = request.get_json().get("message")
