@@ -61,6 +61,7 @@ def classify_intent(input_text):
     # Filter valid neighbors with similarity > 0.5
     threshold = 0.5
     valid_neighbors = [(tags[i], similarities[i]) for i in range(len(similarities)) if similarities[i] > threshold]
+    valid_neighbors.sort(key=lambda x: x[1], reverse=True)
     
     # Show full list of valid neighbors
     #print("Similarities and tags of valid neighbors:")
@@ -70,9 +71,13 @@ def classify_intent(input_text):
     if not valid_neighbors:
         return "nothing"
     
+    #number of neighbors
+    k=5
+    top_k_neighbors = valid_neighbors[:k]
+    
     # Count occurrences of each tag among valid neighbors
     tag_counts = {}
-    for tag, _ in valid_neighbors:
+    for tag, _ in top_k_neighbors:
         if tag in tag_counts:
             tag_counts[tag] += 1
         else:
