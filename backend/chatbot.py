@@ -48,8 +48,6 @@ def predict_chat(sentence: str):
     if prob.item() > accept_probability:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(prob.item())
-
                 return random.choice(intent['responses'])
     else:
         return random.choice(intents["intents"][0]['responses'])
