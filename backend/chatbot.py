@@ -2,7 +2,7 @@ import random
 import json
 import torch
 
-from model import NeuralNetwork2
+from model import NeuralNetwork
 from nltk_utils import bag_of_words, tokenize
 from textblob import TextBlob
 
@@ -21,12 +21,12 @@ all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
 
-model = NeuralNetwork2(input_size, hidden_size, output_size).to(device)
+model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
 # NN = 0.75, NN2 = 0.5
-accept_probability = 0.75
+accept_probability = 0.95
 
 
 def predict_chat(sentence: str):
@@ -48,7 +48,7 @@ def predict_chat(sentence: str):
     if prob.item() > accept_probability:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                # print(prob.item())
+                print(prob.item())
 
                 return random.choice(intent['responses'])
     else:
