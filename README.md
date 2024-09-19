@@ -10,6 +10,10 @@ python -m venv env
 env\Scripts\activate.bat  
 pip install -r requirements.txt
 ```
+If failed to install the requirement. Run:
+```
+pip install numpy nltk torch torch-vision flask flask-cors textblob pandas scikit-learn
+```
 
 # Create requirements.txt (For contributor only)
 ```cmd
