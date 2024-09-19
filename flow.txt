@@ -1,7 +1,0 @@
-1. Tokenization
-2. Remove punctuation
-3. make all text lowercase
-4. remove numbers ? 
-5. remove stop words (words that have little semantic value)
-6. Stemming (Cut word down to base form)
-7. compound term extraction (extracting phrases - very meaningful)
