@@ -3,7 +3,9 @@
 Run command below in CMD
 1. Create new enviromnent
 2. Activate the enviroment
-3. Install all package mentions in requirements.txt
+3. Install all package mentions in requirements.txt <br>
+
+Need some time to install all of the package be patient
 
 ```cmd
 python -m venv env
