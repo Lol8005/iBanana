@@ -11,7 +11,6 @@ Need some time to install all of the package be patient
 python -m venv env
 env\Scripts\activate.bat  
 pip install -r requirements.txt
-pip install numpy
 ```
 If failed to install the requirement. Run:
 ```
