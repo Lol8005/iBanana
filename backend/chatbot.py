@@ -46,6 +46,7 @@ def clean_text(text):
 def predict_chat(sentence: str):
     sentence = tokenize(clean_text(str(TextBlob(sentence.lower()).correct()))) # spelling correction before tokenize
 
+    # vectorize word
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
