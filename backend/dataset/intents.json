@@ -378,6 +378,30 @@
 			"responses": [
 				"I am a general purpose chatbot. My capabilities are:<ol><li>Answering General Questions</li><li>Providing General Recommendations</li><li>Explaining the definitions of our products</li></ol>The chatbot is currently still improving.<br>For suggestions, kindly send an email to suggestion@ibanana.com. Thank you!"
 			]
+		},
+		{
+			"tag": "about_us",
+			"patterns": [
+				"tell me about your business",
+				"what is iBanana",
+				"history of iBanana",
+				"iBanana"
+			],
+			"responses": [
+				"iBanana, the largest computer hardware store in Malaysia. At iBanana, we believe that tech should be simple, reliable, and accessible to everyone. Established with a passion for innovation, we specialize in providing high-quality computer hardware tailored to meet the diverse needs of both enthusiasts and everyday users. From cutting-edge CPUs to powerful GPUs, sleek cases, and all the components in between, we have got everything you need to build or upgrade your dream setup."
+			]
+		},
+		{
+			"tag": "contact_us",
+			"patterns": [
+				"how can I contact you",
+				"contact",
+				"how can I call you",
+				"how can I email you"
+			],
+			"responses": [
+				"You can contact us through: <ul><li>Email: support@ibanana.my</li><li>Call: +60 12 345 6789</li></ul>"
+			]
 		}
 	]
 }
