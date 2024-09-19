@@ -8,4 +8,6 @@ while True:
     if sentence == "quit":
         break
 
-    print("Bot: " + predict_chat(sentence))
+    result, tag = predict_chat(sentence)
+
+    print("Bot: " + result)

@@ -60,11 +60,9 @@ y_train = np.array(y_train)
 num_epochs = 300
 batch_size = 16384
 learning_rate = 2e-2
-# learning_rate = 2e-2
 hidden_size = 24
 input_size = len(X_train[0])
 output_size = len(tags)
-print(input_size, output_size)
 
 class ChatDataset(Dataset):
 
