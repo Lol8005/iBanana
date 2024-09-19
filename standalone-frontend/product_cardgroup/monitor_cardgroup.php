@@ -3,14 +3,11 @@
 $category="Monitor";
 
 $products = array(
-  new Product("Blue armchair", "assets/Product/Furniture/blue_armchair.jpg", "RM 200.99", "Blue velvet armchair with a tufted back and seat. The chair has wooden legs and a classic design. It would be perfect for a living room or study."),
-  new Product("Leather sofa", "assets/Product/Furniture/brown_leather_sofa.jpg", "RM 992.99", "Good chair"),
-  new Product("Grey sofa", "assets/Product/Furniture/grey_sofa.jpg", "RM 993.99", "Good chair"),
-  new Product("Wood dining table", "assets/Product/Furniture/wood_dining_table.jpg", "RM 999.99", "A stunning 140cm x 80cm wooden dining table that invites comfort and style into any dining space."),
-  new Product("5", "assets/Product/Furniture/blue_armchair.jpg", "RM 200.99", "Blue velvet armchair with a tufted back and seat. The chair has wooden legs and a classic design. It would be perfect for a living room or study."),
-  new Product("6", "assets/Product/Furniture/brown_leather_sofa.jpg", "RM 992.99", "Good chair"),
-  new Product("7", "assets/Product/Furniture/grey_sofa.jpg", "RM 993.99", "Good chair"),
-  new Product("8", "assets/Product/Furniture/wood_dining_table.jpg", "RM 999.99", "A stunning 140cm x 80cm wooden dining table that invites comfort and style into any dining space."),
+  new Product("Viewsonic VX2276-SMHD", "assets/Product/Monitor/monitor1.jpg", "$ 123.31", "Display: 21.5 in, IPS, W-LED, 1920 x 1080 pixels. Viewing angles (H/V): 178 ° / 178 ° Brightness: 250 cd/m²."),
+  new Product("AOC G2260VWQ6", "assets/Product/Monitor/monitor2.jpg", "$ 125.70", "Display: 21.5 in, TN, W-LED, 1920 x 1080 pixels. Viewing angles (H/V): 170 ° / 160 ° Brightness: 250 cd/m²."),
+  new Product("Viewsonic VA2265SMH", "assets/Product/Monitor/monitor3.jpg", "$ 129.70", "The ViewSonic VA2265Smh is a 22 inch widescreen monitor with an LED backlight and glossy, thin-bezel design ideal for use in the home or at the office."),
+  new Product("AOC C24G1", "assets/Product/Monitor/monitor4.png", "$ 140.17", "The C24G1 boasts a 1500R curved and frameless VA panel in Full HD, with an ergonomic stand."),
+  new Product("Viewsonic VX2476-SMHD", "assets/Product/Monitor/monitor5.jpg", "$ 142.17", "This monitor features Full HD 1920x1080 resolution for unbelievable pixel-by-pixel image performance. You'll experience the most amazing clarity and detail.")
 );
 
 include 'productCarousel.php';
