@@ -45,6 +45,5 @@ Run chat_local.py
 
 
 # Resource
-[Dataset for chatbot](https://www.kaggle.com/datasets/grafstor/simple-dialogs-for-chatbot?resource=download) <br>
 [Computer hardware dataset](https://www.kaggle.com/datasets/dilshaansandhu/general-computer-hardware-dataset/data) <br>
 [Dataset](https://github.com/Thavarshan/nesbot/blob/main/intents.json#L2)
