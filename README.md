@@ -31,17 +31,38 @@ deactivate
 ```
 
 # Must train model first before running chatbot
-Run train.py
+Run ```python backend\train.py```
 
-# How to enable API requests
-Run chat_api.py
+# How to enable API requests (MNN)
+Run ```python backend\chat_api.py```
 
-# How to run iBanana website
-Run chat_api.py
-Run ...
+# To enable API Request KNN
+Run ```python backend\chat_api_knn.py```
 
-# How to chat with bot locally (CLI interface)
-Run chat_local.py
+# To start UI
+Right click the index.php and choose PHP Server: Serve Project
+
+# To reload UI
+Right click index.php and choose PHP Server: Reload Project
+
+# To run iBanana for KNN
+1. Run API request first to initiate port
+2. Start UI/Reload UI
+
+# To test accuracy for KNN
+```python backend\accuracy_test_copy.py```
+
+# To test accuracy for MNN
+```python backend\accuracy_test.py```
+
+
+# To run iBanana for MNN
+1. Train 
+2. Run API request first to initiate port
+3. Start UI/Reload UI
+
+# How to chat with bot locally (MNN - CLI interface)
+Run ```python backend\chat_local.py```
 
 
 # Resource
