@@ -33,10 +33,6 @@ sympy
 textblob
 threadpoolctl
 tokenizers
-torch
-torch-vision
-torchaudio
-torchvision
 tqdm
 typing_extensions
 tzdata
