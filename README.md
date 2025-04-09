@@ -1,3 +1,10 @@
+iBanana is an imaginary computer hardware store with both a physical store and an online platform. The platform allows customers to purchase products, view information about the store, and access the latest news. However, feedback has shown that customer service is not always available when needed, highlighting the need for a chatbot.
+
+This project focuses on developing a Machine Learning (ML) and Natural Language Processing (NLP)-based retrieval chatbot. The chatbot will automate customer interactions, answering common questions and providing a more personalized experience than static FAQs or guides. By leveraging techniques such as keyword matching, machine learning, and deep learning, the chatbot will retrieve the most relevant responses from a predefined set.
+
+Although retrieval-based chatbots are limited in handling complex or unclear inquiries, they are ideal for handling frequently asked questions (FAQs) and basic troubleshooting, especially in time-constrained development projects. For this chatbot, we will use K-nearest neighbors and Multilayer Neural Network Back Propagation algorithms to build, train, and implement the solution.
+
+
 # Setup environment
 
 Run command below in CMD
